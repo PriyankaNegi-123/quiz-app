@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Bree+Serif&family=Poppins:wght@300;400;500;600;700&family=Rubik+Microbe&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 184, 196);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: rgb(177, 178, 132);
+    width: 600px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 12px black;
+}
+
+.quiz{
+    padding: 1rem 2rem;
+}
+
+.ques{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(11, 11, 96)
+}
+
+li{
+    font-size: 1.2rem;
+    margin: 1rem 1.5rem;
+    color:rgb(38, 39, 61);
+    font-weight: 500;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    background-color: green;
+    padding: 10px;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    transition: 0.4s ease all;
+}
+
+.btn:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+@media (max-width: 625px){
+    .container{
+        width: 450px
+    }
+    .quiz{
+        padding: 0.7rem 1.6rem;
+    }
+    .ques{
+        padding: 0.7rem 0;
+        font-size: 1.4rem;
+    }
+    li{
+        font-size: 0.8rem;
+        margin: 0.5rem 1.3rem;
+    }
+    .btn{
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 468px){
+    .container{
+        width: 350px
+    }
+    .quiz{
+        padding: 0.5rem 1.3rem;
+    }
+    .ques{
+        padding: 0.5rem 0;
+        font-size: 1.2rem;
+    }
+    li{
+        font-size: 0.8rem;
+        margin: 0.4rem 0.7rem;
+    }
+    .btn{
+        padding: 8px;
+        font-size: 1rem;
+    }
+}
